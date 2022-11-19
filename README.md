@@ -1,2 +1,2 @@
-# testing-css-js
-Alex-testing-css-js
+# testing css js
+Test for Alex CSS and JS skill
