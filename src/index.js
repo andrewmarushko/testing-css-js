@@ -1,1 +1,3 @@
-console.log('test112')
+import "./styles/css/main.css";
+import "./styles/sass/style.sass";
+import './js/common'

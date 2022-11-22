@@ -1,0 +1,59 @@
+$paypal-button-color: #6B4897
+$header-nav-button-color: #EFEFEF
+
+.wrapper
+  padding: 1.5rem 6.75rem
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 104px
+
+.logo
+  flex: none
+  order: 0
+  flex-grow: 0
+
+.menu
+  ul
+    display: flex
+    list-style: none
+    flex-direction: row
+    align-items: center
+    padding: 0
+    gap: .5rem
+    flex: none
+    order: 1
+    flex-grow: 0
+    li
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      padding: 0 1rem
+      gap: .5rem
+      height: 3rem
+      border-radius: 1.5rem
+      flex: none
+      order: 0
+      flex-grow: 0
+      &:hover
+        background: $header-nav-button-color
+      a
+        text-decoration: none
+
+.header-button
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding: 0 2rem
+  gap: .75rem
+  background: $paypal-button-color
+  border-radius: 1.5rem
+  flex: none
+  order: 2
+  flex-grow: 0
+  cursor: pointer
+  height: 3rem
