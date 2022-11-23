@@ -1,0 +1,23 @@
+//mixins
+@mixin btnPaypal()
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding: 0 2rem
+  background: $paypal-button-color
+  border-radius: 1.5rem
+  cursor: pointer
+  border: none
+  color: $white
+  font-family: $font-heebo
+  font-weight: 700
+  font-size: 1.25rem
+  line-height: 3rem
+
+@mixin paddingSection()
+  padding: 0 6.75rem
+  @media screen and (max-width: $laptopM)
+    padding: 0 3rem
+  @media screen and (max-width: $laptopS)
+    padding: 0 1rem
