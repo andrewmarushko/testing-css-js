@@ -1,0 +1,40 @@
+.stories
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: red
+  @include paddingSection(13.125rem, 0)
+  .stories__wrapper
+    display: flex
+    gap: 3rem
+    background: $white
+    border-radius: 1rem
+    padding: 3rem
+    .stories__img
+      display: flex
+      flex-direction: column
+      align-items: center
+      .stories__img__description__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 1.5rem
+        .stories__img__description
+          margin: 0
+    .stories__info
+      display: flex
+      flex-direction: column
+      .stories__info__header
+        color: $hero-text-color
+        font-size: 25px
+        font-weight: 500
+        line-height: 37px
+        align-self: center
+        margin: 0
+      .stories__info__description
+        margin: 2rem 0 1.5rem
+        font-weight: 400
+        font-size: 18px
+        line-height: 26px
+      .header__button
+        align-self: flex-start

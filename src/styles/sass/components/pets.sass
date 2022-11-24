@@ -1,0 +1,53 @@
+.pets
+  display: flex
+  flex-direction: column
+  align-items: center
+  @include paddingSection(6.75rem, 0)
+  .pets__wrapper
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    gap: 1.5rem
+    .pets__item__badge
+      position: absolute
+      left: 0.69%
+      right: 28.12%
+      top: 67.5%
+      bottom: 20%
+      background: #6B4897
+      border-radius: 1.5rem
+      display: flex
+      justify-content: center
+      align-items: center
+      color: $white
+      font-weight: 500
+      font-size: 1rem
+      line-height: 2.5rem
+    .pets__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      position: relative
+      .pets__item__img
+        border-radius: 50%
+      .pets__item__name
+        font-weight: 500
+        font-size: 1rem
+        line-height: 1rem
+        align-self: center
+    .pets__item--addPet
+      background: $paypal-button-color
+      width: 282px
+      height: 282px
+      border-radius: 50%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .pets__item__name
+        color: $white
+.male
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #BEF2EB 100%)
+
+.female
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FFD9F0 100%)

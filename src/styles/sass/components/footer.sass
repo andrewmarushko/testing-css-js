@@ -1,0 +1,26 @@
+.footer
+  display: flex
+  justify-content: space-between
+  @include paddingSection(6.75rem, 2rem)
+  .footer__links-section
+    display: flex
+    gap: 4rem
+    grid-row-gap: 1rem
+    .footer__links-section--column
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      gap: 1rem
+  .footer__socialMedia
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .footer__socialMedia__icons-wrapper
+      display: flex
+      gap: 15px
+      .footer__socialMedia__button
+        background: $green
+        border-radius: 50%
+        width: 55px
+        height: 55px
+        cursor: pointer

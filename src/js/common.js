@@ -1,9 +1,11 @@
 const navList = document.getElementById("nav-list");
+const selectList = document.querySelector(".button-group__wrapper")
 
 // the function to remove active class in navbar
 const removeClasses = (htmlCollection) => {
   Array.from(htmlCollection).forEach((item) => {
     item.classList.remove('active')
+    item.classList.remove('active-select')
   })
 }
 
@@ -20,6 +22,15 @@ const navListHandler = (e) => {
 };
 
 navList.addEventListener("click", navListHandler)
+
+const selectListHandler = (e) => {
+  if(e.target.tagName==='BUTTON') {
+    removeClasses(selectList.children)
+    e.target.classList.add("active-select")
+  }
+};
+
+selectList.addEventListener("click", selectListHandler)
 
 //---------------
 
