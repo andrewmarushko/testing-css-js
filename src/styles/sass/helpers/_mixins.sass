@@ -14,10 +14,14 @@
   font-weight: 700
   font-size: 1.25rem
   line-height: 3rem
-
-@mixin paddingSection()
-  padding: 0 6.75rem
-  @media screen and (max-width: $laptopM)
-    padding: 0 3rem
+  &:hover
+    background: rgba($paypal-button-color, .8)
   @media screen and (max-width: $laptopS)
-    padding: 0 1rem
+    font-size: 1rem
+
+@mixin paddingSection($px, $py)
+  padding: $py $px
+  @media screen and (max-width: $laptopM)
+    padding: $py 3rem
+  @media screen and (max-width: $laptopS)
+    padding: $py 1rem
