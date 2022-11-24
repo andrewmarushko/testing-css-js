@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/main.css">
+  <title>meow&woods</title>
 </head>
 <body>
-<main>
-    <h1>Welcome to My Websi2te</h1>
-    <script src="../dist/bundle.js"></script>
-</main>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo-wrapper">
+        <a href="/" class="header__logo" >
+          <img src="./assets/images/Logo.png" alt="logo"/>
+        </a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+      <nav class="header__menu hidden nav-item">
+        <ul id="nav-list">
+          <li>
+            <img class="header__navIcon" src="./assets/icons/paw.svg" alt="paw">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <img class="header__navIcon" src="./assets/icons/paw.svg" alt="paw">
+            <a href="#">Find me a pet</a>
+          </li>
+          <li>
+            <img class="header__navIcon" src="./assets/icons/paw.svg" alt="paw">
+            <a href="#">About us</a></li>
+          <li>
+            <img class="header__navIcon" src="./assets/icons/paw.svg" alt="paw">
+            <a href="#">Become a volunteer</a></li>
+        </ul>
+      </nav>
+      <button class="header__button hidden nav-item">
+        <img src="./assets/icons/paypal.svg" alt="logo"/>
+        Show some love
+      </button>
+    </header>
+    <section class="hero" style="background: url(assets/images/headerCarouselSectionBg.png) no-repeat">
+      <div class="hero__content-wrapper">
+        <img class="hero__img" src="./assets/images/man&dog.png" alt="logo"/>
+        <article class="hero__article">
+          <div class="hero__article-wrapper">
+            <h3 class="hero__article-title">
+              You love pets, you believe in our mission, But you have no time to dedicate to the pet?
+            </h3>
+            <p class="hero__article-subtitle">
+              Show your love and dedication in a different way - donate to our shelter! We appreciate each dollar we get, and we spend it for the good of the beloved guests that stay in our home.
+            </p>
+          </div>
+          <button class="header__button">
+            <img src="./assets/icons/paypal.svg" alt="logo"/>
+            Show your love
+          </button>
+        </article>
+      </div>
+    </section>
+  </div>
+  <script src="../dist/bundle.js"></script>
 </body>
 </html>

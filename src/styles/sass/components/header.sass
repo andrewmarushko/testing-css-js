@@ -1,0 +1,111 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 40px
+  @include paddingSection
+  @media screen and (max-width: $laptopM)
+    gap: 20px
+  @media screen and (max-width: $laptopS)
+    gap: 5px
+
+.header__logo
+  flex: none
+  order: 0
+  flex-grow: 0
+  img
+    max-width: 100%
+
+.header__burger
+  display: none
+
+.logo-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__menu
+  ul
+    display: flex
+    list-style: none
+    flex-direction: row
+    align-items: center
+    padding: 0
+    gap: .5rem
+    flex: none
+    order: 1
+    flex-grow: 0
+    li
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      padding: 0 1rem
+      gap: .5rem
+      height: 3rem
+      border-radius: 1.5rem
+      &:hover
+        background: $header-nav-button-color
+      a
+        text-decoration: none
+        color: $nav-text-color
+        font-size: 1.125rem
+        line-height: 1.625rem
+      img
+        display: none
+
+.active
+  background: #EFEFEF
+  a
+    font-weight: 700
+  .header__navIcon
+    display: block
+
+.header__button
+  @include btnPaypal
+  gap: .75rem
+  flex: none
+  order: 2
+  flex-grow: 0
+  @media screen and (max-width: $laptopM)
+    padding: 0 1rem
+
+@media screen and (max-width: $tablet)
+  .header
+    flex-direction: column
+    align-items: flex-start
+  .header__burger
+    display: block
+    position: relative
+    width: 30px
+    height: 30px
+    z-index: 5
+  .header__burger:before , .header__burger:after
+    content: ''
+    background-color: $black
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+  .header__burger:before
+    top: 0
+  .header__burger:after
+    bottom: 0
+  .header__burger
+    span
+      background-color: $black
+      position: absolute
+      width: 100%
+      height: 2px
+      left: 0
+      top: 15px
+  .logo-wrapper
+    width: 100%
+  .hidden
+    display: none
+  .header__menu
+    ul
+      flex-direction: column
+      align-items: flex-start
+
+
