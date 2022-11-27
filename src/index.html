@@ -41,7 +41,8 @@
         Show some love
       </button>
     </header>
-    <section class="hero" style="background: url(assets/images/HeaderCarouselBg.png) no-repeat">
+    <section class="hero" style="background-image: url(assets/images/headerCarouselSectionBg.png)">
+      <img src="assets/images/man&dog.png" class="hero__img" alt="man" />
       <div class="hero__content-wrapper">
         <article class="hero__article">
           <div class="hero__article-wrapper">
@@ -63,52 +64,70 @@
       <h1 class="category-header">Pets Available for Adoption</h1>
       <div class="pets__wrapper">
         <div class="pets__item">
-          <div>
+          <figure class="pets__item__figure">
             <img class="pets__item__img male" src="./assets/images/cat.png" alt="cat" />
-            <span class="pets__item__badge">
-              Charlie
-            </span>
-          </div>
-
+            <figcaption class="pets__item__figcaption">I’m Charlie, and I’m just 2 years old. I am fully vaccinated and well-behaved young kittie.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Charlie
+          </span>
           <p class="pets__item__name">Male, 2 y.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img female" src="./assets/images/dog.png" alt="dog" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/dog.png" alt="dog" />
+            <figcaption class="pets__item__figcaption">I’m Melissie, and I’m just 10 month old. I am fully vaccinated and well-behaved young puppy.</figcaption>
+          </figure>
           <span class="pets__item__badge">
-            Patron
+            Melissie
           </span>
           <p class="pets__item__name">Female, 10 m.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img female" src="./assets/images/kittie.png" alt="kittie" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/kittie.png" alt="kittie" />
+            <figcaption class="pets__item__figcaption">I’m Valerie, and I’m just 8 month old. I am fully vaccinated and well-behaved young kittie.</figcaption>
+          </figure>
           <span class="pets__item__badge">
             Valerie
           </span>
           <p class="pets__item__name">Female, 8 m.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img male" src="./assets/images/bigdog.png" alt="bigdog" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img male" src="./assets/images/bigdog.png" alt="bigdog" />
+            <figcaption class="pets__item__figcaption">I’m Sir Lancelot, and I’m just 2 years old. I am fully vaccinated and well-behaved young sir.</figcaption>
+          </figure>
           <span class="pets__item__badge">
             Sir Lancelot
           </span>
           <p class="pets__item__name">Male, 2 y.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img female" src="./assets/images/patron.png" alt="patron" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/patron.png" alt="patron" />
+            <figcaption class="pets__item__figcaption">I’m Felicia, and I’m just 1 year old. I am fully vaccinated and well-behaved young dog.</figcaption>
+          </figure>
           <span class="pets__item__badge">
             Felicia
           </span>
           <p class="pets__item__name">Female, 1 y.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img female" src="./assets/images/rabbit.png" alt="rabbit" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/rabbit.png" alt="rabbit" />
+            <figcaption class="pets__item__figcaption">I’m Arianna, and I’m just 6 months old. I am fully vaccinated and well-behaved young rabbit.</figcaption>
+          </figure>
           <span class="pets__item__badge">
             Arianna
           </span>
           <p class="pets__item__name">Female, 6 m.o.</p>
         </div>
         <div class="pets__item">
-          <img class="pets__item__img male" src="./assets/images/parrot.png" alt="parrot" />
+          <figure class="pets__item__figure">
+            <img class="pets__item__img male" src="./assets/images/parrot.png" alt="parrot" />
+            <figcaption class="pets__item__figcaption">I’m Boris, and I’m just 9 months old. I am fully vaccinated and well-behaved young parrot.</figcaption>
+          </figure>
           <span class="pets__item__badge">
             Boris
           </span>
@@ -120,7 +139,86 @@
         </div>
       </div>
     </section>
-    <section class="stories" style="background: url(assets/images/vectorObjectsOnBg.png) no-repeat">
+    <section class="pets--grid">
+      <h1 class="category-header">Pets Available for Adoption ( Grid one )</h1>
+      <div class="pets--grid__wrapper">
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img male" src="./assets/images/cat.png" alt="cat" />
+            <figcaption class="pets__item__figcaption">I’m Charlie, and I’m just 2 years old. I am fully vaccinated and well-behaved young kittie.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Charlie
+          </span>
+          <p class="pets__item__name">Male, 2 y.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/dog.png" alt="dog" />
+            <figcaption class="pets__item__figcaption">I’m Melissie, and I’m just 10 month old. I am fully vaccinated and well-behaved young puppy.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Melissie
+          </span>
+          <p class="pets__item__name">Female, 10 m.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/kittie.png" alt="kittie" />
+            <figcaption class="pets__item__figcaption">I’m Valerie, and I’m just 8 month old. I am fully vaccinated and well-behaved young kittie.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Valerie
+          </span>
+          <p class="pets__item__name">Female, 8 m.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img male" src="./assets/images/bigdog.png" alt="bigdog" />
+            <figcaption class="pets__item__figcaption">I’m Sir Lancelot, and I’m just 2 years old. I am fully vaccinated and well-behaved young sir.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Sir Lancelot
+          </span>
+          <p class="pets__item__name">Male, 2 y.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/patron.png" alt="patron" />
+            <figcaption class="pets__item__figcaption">I’m Felicia, and I’m just 1 year old. I am fully vaccinated and well-behaved young dog.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Felicia
+          </span>
+          <p class="pets__item__name">Female, 1 y.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img female" src="./assets/images/rabbit.png" alt="rabbit" />
+            <figcaption class="pets__item__figcaption">I’m Arianna, and I’m just 6 months old. I am fully vaccinated and well-behaved young rabbit.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Arianna
+          </span>
+          <p class="pets__item__name">Female, 6 m.o.</p>
+        </div>
+        <div class="pets__item">
+          <figure class="pets__item__figure">
+            <img class="pets__item__img male" src="./assets/images/parrot.png" alt="parrot" />
+            <figcaption class="pets__item__figcaption">I’m Boris, and I’m just 9 months old. I am fully vaccinated and well-behaved young parrot.</figcaption>
+          </figure>
+          <span class="pets__item__badge">
+            Boris
+          </span>
+          <p class="pets__item__name">Male, 9 m.o.</p>
+        </div>
+        <div class="pets__item--addPet">
+          <img class="pets__item__img" src="./assets/icons/Paw-white.svg" alt="addPet" />
+          <p class="pets__item__name">+ more pets</p>
+        </div>
+      </div>
+    </section>
+    <section class="stories" style="background-image: url(assets/images/BlueBackground.png)">
       <h1 class="category-header">Our stories</h1>
       <div class="stories__wrapper">
         <div class="stories__img">
@@ -142,7 +240,7 @@
       </div>
       <p>sdfsdfsdfs</p>
     </section>
-    <section class="donates" style="background: url(assets/images/DonateBg.png) no-repeat">
+    <section class="donates" style="background-image: url(assets/images/DonateBg.png)">
       <div class="donates__chat-wrapper">
         <img class="donates__chat--image female" src="./assets/images/dog.png" alt="dog" />
         <div class="donates__chat--messageWrapper">
@@ -192,13 +290,13 @@
       <div class="footer__socialMedia">
         <div class="footer__socialMedia__icons-wrapper">
           <button class="footer__socialMedia__button">
-            <img src="assets/icons/paw.svg" alt="google +" />
+            <img src="assets/icons/Google.svg" alt="google +" />
           </button>
           <button class="footer__socialMedia__button">
-            <img src="assets/icons/paw.svg" alt="facebook" />
+            <img src="assets/icons/Facebook.svg" alt="facebook" />
           </button>
           <button class="footer__socialMedia__button">
-            <img src="assets/icons/paw.svg" alt="instagram" />
+            <img src="assets/icons/Instagram.svg" alt="instagram" />
           </button>
         </div>
         <a href="https://meowwoof.org">©2021 meow&woof.org</a>

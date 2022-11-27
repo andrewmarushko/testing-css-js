@@ -1,17 +1,19 @@
 .hero
-  height: 480px
+  background-size: cover
+  display: flex
+  width: auto
   @include paddingSection(6.75rem, 0)
+  @media screen and (max-width: $tablet)
+    flex-direction: column
   .hero__content-wrapper
     display: flex
     justify-content: flex-end
-    height: 100%
     .hero__article
       display: flex
       flex-direction: column
       justify-content: center
       align-items: center
       padding: 1rem 0
-      max-width: 690px
       .hero__article-wrapper
         display: flex
         flex-direction: column
