@@ -24,6 +24,8 @@
       .donates__chat--message
         font-weight: 600
         margin: 0
+        @media screen and (max-width: $tablet)
+          text-align: center
   .donates__description-text
     max-width: 600px
     @media screen and (max-width: $tablet)
@@ -47,7 +49,7 @@
         background: $white
         border-radius: 1.5rem
         font-weight: 500
-        font-size: 20px
+        font-size: clamp(.75rem, 2.5vw, 1.25rem)
         line-height: 29px
     .donates__amount__input
       padding: 9px 24px

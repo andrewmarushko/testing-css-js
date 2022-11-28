@@ -12,7 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
+    // contentBase: './dist',
     port: 3000,
+    // historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -25,6 +27,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "src/assets", to: "assets" },
+        { from: "src/pages", to: "pages" }
       ],
     }),
   ],
